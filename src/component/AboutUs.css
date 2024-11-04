@@ -1,0 +1,53 @@
+.who-we-are {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.content {
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+blockquote {
+    font-size: 1.25rem;
+    font-style: italic;
+    margin-top: 20px;
+    border-left: 4px solid #000;
+    padding-left: 10px;
+}
+
+blockquote cite {
+    display: block;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.images img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}

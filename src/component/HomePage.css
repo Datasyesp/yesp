@@ -1,0 +1,112 @@
+.hero {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.tagline p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Gold color for the tagline */
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-description {
+    font-size: 1.25em;
+    margin-bottom: 40px;
+    color: #d3d3d3; /* Light gray for the description */
+    line-height: 1.6;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-button, .secondary-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 200px; /* Ensure buttons are large enough on smaller screens */
+    margin-bottom: 10px; /* Space between buttons on smaller screens */
+}
+
+.cta-button {
+    background-color: #ffffff; /* White button */
+    color: #000000; /* Black text */
+}
+
+.cta-button:hover {
+    background-color: #f0f0f0; /* Slightly lighter background on hover */
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.secondary-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em; /* Smaller heading on tablets and below */
+    }
+
+    .hero-description {
+        font-size: 1.1em; /* Smaller description on tablets and below */
+    }
+
+    .cta-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 2em; /* Smaller heading on mobile */
+    }
+
+    .hero-description {
+        font-size: 1em; /* Smaller description on mobile */
+    }
+
+    .cta-button, .secondary-button {
+        font-size: 1em; /* Smaller buttons on mobile */
+        padding: 12px 20px;
+    }
+}

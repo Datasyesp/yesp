@@ -1,0 +1,44 @@
+.about-founder {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .about-founder-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .founder-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .founder-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .founder-details {
+    text-align: center;
+  }
+  
+  .founder-social-links {
+    margin-top: 1rem;
+  }
+  
+  .founder-social-links a {
+    margin: 0 0.5rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .founder-social-links a:hover {
+    text-decoration: underline;
+  }
+  

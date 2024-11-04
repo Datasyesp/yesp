@@ -1,0 +1,148 @@
+/* Blog.css */
+
+/* Container */
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Headings */
+.blog-container h1 {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.blog-container h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+.blog-container p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Lists */
+.blog-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-container ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Links */
+.blog-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.blog-container a:hover {
+    text-decoration: underline;
+}
+
+/* Images */
+.blog-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Blockquotes */
+.blog-container blockquote {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #ccc;
+    font-style: italic;
+}
+
+/* Code blocks */
+.blog-container pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+/* Buttons */
+.blog-container .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.blog-container .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+
+/* For tablets and below */
+@media (max-width: 768px) {
+    .blog-container {
+        padding: 40px 20px;
+    }
+
+    .blog-container h1 {
+        font-size: 2rem;
+    }
+
+    .blog-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .blog-container p,
+    .blog-container ul li {
+        font-size: 1rem;
+    }
+
+    .blog-container .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .blog-container {
+        padding: 20px 10px;
+    }
+
+    .blog-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .blog-container h2 {
+        font-size: 1.3rem;
+    }
+
+    .blog-container p,
+    .blog-container ul li {
+        font-size: 0.9rem;
+    }
+
+    .blog-container .btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}

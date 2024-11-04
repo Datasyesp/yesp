@@ -1,0 +1,13 @@
+# Netlify Configuration File
+
+[build]
+  # The build command that runs to build your project
+  command = "npm run build"
+  # Directory to deploy (relative to the root of your repository)
+  publish = "build"
+
+[[redirects]]
+  # Redirect all paths to your index.html
+  from = "/*"
+  to = "/index.html"
+  status = 200

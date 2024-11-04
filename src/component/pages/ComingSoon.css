@@ -1,0 +1,47 @@
+/* src/pages/ComingSoon.css */
+
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.coming-soon h1 {
+    font-size: 2.5rem; /* Adjusted size for responsiveness */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.coming-soon p {
+    font-size: 1.25rem; /* Adjusted size for responsiveness */
+    color: #666;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and larger screens */
+@media (min-width: 768px) {
+    .coming-soon h1 {
+        font-size: 3rem;
+    }
+
+    .coming-soon p {
+        font-size: 1.5rem;
+    }
+}
+
+/* For large screens */
+@media (min-width: 1200px) {
+    .coming-soon h1 {
+        font-size: 3.5rem;
+    }
+
+    .coming-soon p {
+        font-size: 1.75rem;
+    }
+}

@@ -1,0 +1,88 @@
+/* Container Styles */
+.contact-us {
+    /* background: #ffffff; White background */
+    padding: 60px 20px;
+    text-align: left;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-us h2 {
+    font-size: 2.4em;
+    margin-bottom: 30px;
+    color: #333; /* Dark grey heading */
+    font-weight: 700;
+  }
+  
+  .contact-us span {
+    font-size: 1.2em; /* Slightly larger emoji */
+  }
+  
+  .contact-us form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: #000; /* Focus effect */
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    height: 120px;
+    grid-column: span 2; /* Make textarea full width */
+  }
+  
+  button[type="submit"] {
+    background-color: #000; /* Black background for the button */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    grid-column: span 2;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #444; /* Darker on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-us form {
+      grid-template-columns: 1fr;
+    }
+  
+    button[type="submit"] {
+      grid-column: span 1;
+    }
+  }
+  

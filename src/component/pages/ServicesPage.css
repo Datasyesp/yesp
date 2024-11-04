@@ -1,0 +1,165 @@
+/* ServicesPage.css */
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff; /* White background */
+    margin: 0;
+    padding: 0;
+    color: #333333; /* Dark gray text */
+}
+
+.services-container {
+    padding: 60px 15px; /* Adjusted padding */
+    max-width: 960px; /* Adjusted container width */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services-heading {
+    font-size: 32px; /* Reduced heading size */
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000000; 
+}
+
+.services-subheading {
+    font-size: 16px; /* Reduced subheading size */
+    color: #666666; /* Medium gray for subheading */
+    margin-bottom: 30px; /* Reduced bottom margin */
+    line-height: 1.6;
+    max-width: 700px; /* Adjusted max-width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-grid {
+    display: flex;
+    flex-direction: row; /* Ensure items are aligned horizontally */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    gap: 30px;
+    justify-content: center;
+}
+
+.service-card {
+    background-color: #ffffff; /* White card background */
+
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Light shadow */
+    padding: 40px 30px;
+    max-width: 350px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow on hover */
+}
+
+.service-icon {
+    font-size: 36px; /* Reduced icon size */
+    color: #000000; /* Black icons */
+    margin-bottom: 15px; /* Reduced bottom margin */
+}
+
+.service-title {
+    font-size: 20px; /* Reduced title size */
+    font-weight: 600;
+    color: #000000; /* Black text for titles */
+    margin-bottom: 10px; /* Reduced bottom margin */
+}
+
+.service-description {
+    font-size: 14px; /* Reduced description size */
+    color: #666666; /* Medium gray for descriptions */
+    line-height: 1.6;
+    margin-bottom: 15px; /* Reduced bottom margin */
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px; /* Reduced bottom margin */
+}
+
+.service-features li {
+    font-size: 13px; /* Reduced feature list size */
+    color: #666666; /* Medium gray for feature list */
+    margin-bottom: 8px; /* Reduced bottom margin */
+    position: relative;
+    padding-left: 20px; /* Adjusted padding */
+}
+
+.service-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #000000; /* Black checkmarks */
+    font-weight: bold;
+}
+
+.service-button {
+    background-color: #000000; /* Black button */
+    color: #ffffff; /* White text on button */
+    border: none;
+    padding: 10px 20px; /* Adjusted padding */
+    border-radius: 50px;
+    font-size: 14px; /* Reduced font size */
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none; 
+    transition: background-color 0.3s ease;
+}
+
+.service-button:hover {
+    background-color: #333333; /* Darker gray on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .services-grid {
+        gap: 20px;
+    }
+
+    .service-card {
+        max-width: 45%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .services-container {
+        padding: 60px 15px; /* Adjusted padding */
+    }
+
+    .services-heading {
+        font-size: 28px; /* Adjusted heading size for small screens */
+    }
+
+    .services-subheading {
+        font-size: 14px; /* Adjusted subheading size for small screens */
+    }
+
+    .service-title {
+        font-size: 18px; /* Adjusted title size for small screens */
+    }
+
+    .service-description,
+    .service-features li {
+        font-size: 12px; /* Adjusted font size for small screens */
+    }
+
+    .service-button {
+        padding: 8px 16px; /* Adjusted padding for small screens */
+        font-size: 12px; /* Adjusted font size for small screens */
+    }
+}

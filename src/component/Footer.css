@@ -1,0 +1,133 @@
+.footer {
+    background-color: #000000;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-right {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #ffffff;
+    margin: 0;
+}
+
+.description {
+    margin: 0 0 20px;
+    font-size: 1em;
+    color: #d3d3d3;
+}
+
+.copyright {
+    font-size: 0.875em;
+    color: #999999;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 20px 20px 0;
+    flex: 1 1 100%;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #d3d3d3;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 15px; /* Spacing between icons */
+    flex-wrap: wrap;
+}
+
+.footer-icons a {
+    color: #d3d3d3; /* Icon color */
+    font-size: 1.5em; /* Adjust size as needed */
+    text-decoration: none;
+}
+
+.footer-icons a:hover {
+    color: #ffffff; /* Icon color on hover */
+}
+
+/* Media Queries for Responsiveness */
+
+@media (min-width: 768px) {
+    .footer-left, .footer-right {
+        flex: 1 1 50%;
+        margin-bottom: 0;
+    }
+
+    .footer-right {
+        align-items: flex-end;
+    }
+
+    .footer-links ul {
+        flex: 1 1 30%;
+        margin: 0 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-left, .footer-right {
+        flex: 1 1 50%;
+    }
+    
+    .footer-links ul {
+        flex: 1 1 auto;
+        margin: 0;
+    }
+
+    .footer-right {
+        align-items: flex-end;
+    }
+}
